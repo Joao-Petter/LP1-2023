@@ -3,6 +3,7 @@ public class Roda {
     private int calibragem;
 
 
+    //construtor
     public Roda(int aro, int calibragem) {
         this.aro = aro;
         this.calibragem = calibragem;
