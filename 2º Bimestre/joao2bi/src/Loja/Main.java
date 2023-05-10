@@ -8,27 +8,29 @@ public class Main {
     public static void main(String[] args)
     {
         //Clientes clic = new Clientes("lala",123,9981233);
-        Loja lol = new Loja("marabraz");
-        Clientes cli1 = new Clientes("lala",1234,92837-20);
+        Loja lol = new Loja("Marabraz");
 
-        lol.addped(new Pedidos(cli1,"maquina",122.2,23.2));
+        Clientes cl1 = new Clientes("lala",1234,92837-20);
+        Clientes cl2 = new Clientes("ruanes",1234,92837-20);
 
-        lol.addclie(new Clientes("Laura",60835563,119981233));
-        lol.addclie(new Clientes("Bianca",133050595,119343933));
+        lol.addped(new Pedidos(cl1,"maquina",122.2,232));
+        lol.addped(new Pedidos(cl2,"lixeira",99.4,020));
+
+        lol.addclie(new Clientes("Laura",608355636,119981233));
+        lol.addclie(new Clientes("Marayo",133077595,119343933));
+        lol.addclie(new Clientes("Maraíso",23465912,119343933));
+        lol.addclie(new Clientes("Camilla",345335776,119343933));
+        lol.addclie(new Clientes("Pedro",193367431,119343933));
        // lol.addped();
 
 
-        for(Pedidos ped: lol.getPed()/*esse get cli retorna quantos cli eu tenho? método esta em loja*/) {
-            System.out.println(ped.getProduto());
 
-        }
-
-        //for(Clientes c)
+        //como exibir o nome em for
 
         for(Clientes cli: lol.getCli()/*esse get cli retorna quantos cli eu tenho? método esta em loja*/)
         {
-            System.out.println(cli.getNome()+cli.getCpf());
-            System.out.println(" ");
+            System.out.println(cli.getNome()+" " + cli.getCpf());
+
         }
 
 

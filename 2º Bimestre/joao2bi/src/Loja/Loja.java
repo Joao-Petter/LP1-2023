@@ -28,7 +28,7 @@ public class Loja {
 
     public void addclie(Clientes cli) {
 
-        this.cli.add(cli);
+        this.cli.add(cli);  //esse segundo cli é o parâmetro.
     }
 
     public List<Pedidos> getPed() {
