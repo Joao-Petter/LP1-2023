@@ -27,7 +27,7 @@ public class Main {
 
         //como exibir o nome em for
 
-        for(Clientes cli: lol.getCli()/*esse get cli retorna quantos cli eu tenho? método esta em loja*/)
+        for(Clientes cli: lol.getCli()
         {
             System.out.println(cli.getNome()+" " + cli.getCpf());
 
