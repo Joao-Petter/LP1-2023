@@ -17,7 +17,7 @@ public class Clientes  {
     }
 
     public void setNome(String nome) {
-        this.nome = nome;Clientes
+        this.nome = nome;
     }
 
     public int getCpf() {
@@ -46,6 +46,6 @@ public class Clientes  {
 }
 
 
-}
+
 
 
