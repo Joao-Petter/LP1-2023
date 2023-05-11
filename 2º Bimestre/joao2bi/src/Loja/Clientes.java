@@ -17,7 +17,7 @@ public class Clientes  {
     }
 
     public void setNome(String nome) {
-        this.nome = nome;
+        this.nome = nome;Clientes
     }
 
     public int getCpf() {
@@ -35,6 +35,15 @@ public class Clientes  {
     public void setTelefone(int telefone) {
         this.telefone = telefone;
     }
+  public void showcliente()
+    {
+
+            System.out.println(getNome()+" "+ getCpf());
+
+
+
+    }
+}
 
 
 }
