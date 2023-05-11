@@ -10,28 +10,26 @@ public class Main {
         //Clientes clic = new Clientes("lala",123,9981233);
         Loja lol = new Loja("Marabraz");
 
-        Clientes cl1 = new Clientes("lala",1234,92837-20);
-        Clientes cl2 = new Clientes("ruanes",1234,92837-20);
+        Clientes cl1 = new Clientes("lala","126534","2837-20");
+        Clientes cl2 = new Clientes("ruanes","123564","92837-20");
 
         lol.addped(new Pedidos(cl1,"maquina",122.2,232));
-        lol.addped(new Pedidos(cl2,"lixeira",99.4,020));
+        lol.addped(new Pedidos(cl1,"lixeira",99.4,20));
 
-        lol.addclie(new Clientes("Laura",608355636,119981233));
-        lol.addclie(new Clientes("Marayo",133077595,119343933));
-        lol.addclie(new Clientes("Maraíso",23465912,119343933));
-        lol.addclie(new Clientes("Camilla",345335776,119343933));
-        lol.addclie(new Clientes("Pedro",193367431,119343933));
-       // lol.addped();
+        lol.addclie(cl1);
+        lol.addclie(new Clientes("Laura","608355636","119981233"));
+        lol.addclie(new Clientes("Marayo","133077595","119343933"));
 
+        
+        
+        cl1.showcliente();
 
-
-        //como exibir o nome em for
-
-        for(Clientes cli: lol.getCli()
-        {
-            System.out.println(cli.getNome()+" " + cli.getCpf());
-
+        for (Pedidos pd: lol.getPed()) {
+            if (pd.getClientes().getNome() == "lala"){
+                System.out.println(pd.getCodigo() +" "+ pd.getProduto() +" "+ pd.getValor());
+            }
         }
+
 
 
     }
